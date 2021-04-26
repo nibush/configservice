@@ -1,0 +1,16 @@
+spring:
+  profiles:
+    active:
+    - redis
+
+---
+spring:
+  profiles: redis
+  application:
+    name: configservice-redis
+    
+---
+spring:
+  profiles: mybatis
+  application:
+    name: configservice-mybatis
